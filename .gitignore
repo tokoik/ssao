@@ -5,7 +5,7 @@ core
 *.o
 *~
 a.out
-ggsample01
+ssao
 #
 # for Mac
 #
