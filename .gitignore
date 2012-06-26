@@ -1,0 +1,40 @@
+#
+# for Linux
+#
+core
+*.o
+*~
+a.out
+ggsample01
+#
+# for Mac
+#
+.DS_Store
+build/
+*.xcodeproj/*
+!project.pbxproj
+*.xcuserdatad/
+DerivedData/
+#
+# for Windows
+#
+Debug/
+ipch/
+Thumbs.db
+*.obj
+*.dll
+!freeglut.dll
+!glew32.dll
+*.ncb
+*.lib
+!freeglut.lib
+!glew32.lib
+*.ncb
+*.suo
+*.vcproj.*.*.user
+*.sdf
+*.opensdf
+#
+# anothre stuff
+#
+*.bak
