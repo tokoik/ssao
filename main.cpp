@@ -132,7 +132,7 @@ static GLuint pass1, pass2;
 */
 #include "Trackball.h"
 static Trackball *tb;
-static int btn;
+static int btn = -1;
 
 /*
 ** OBJ ƒtƒ@ƒCƒ‹
