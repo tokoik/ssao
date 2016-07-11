@@ -13,6 +13,7 @@
 		7D3A7CB7128A949A0073D086 /* pass2.vert in Resources */ = {isa = PBXBuildFile; fileRef = 7D3A7CB3128A948F0073D086 /* pass2.vert */; };
 		7D4C1E50128ED502002F62F8 /* room.raw in Resources */ = {isa = PBXBuildFile; fileRef = 7D4C1E4F128ED502002F62F8 /* room.raw */; };
 		7D7AF85F1222C8CC003A0434 /* opengl.icns in Resources */ = {isa = PBXBuildFile; fileRef = 7D7AF85E1222C8CC003A0434 /* opengl.icns */; };
+		7D82B6481D3464E2006980FA /* HappyBudda.obj in Resources */ = {isa = PBXBuildFile; fileRef = 7D82B6471D3464E2006980FA /* HappyBudda.obj */; };
 		7DA91BC9128665B4005010F2 /* glsl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7DA91BC7128665B4005010F2 /* glsl.cpp */; };
 		7DA91BCB128665BE005010F2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7DA91BCA128665BE005010F2 /* main.cpp */; };
 		7DA91BCE128665CE005010F2 /* Obj.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7DA91BCC128665CE005010F2 /* Obj.cpp */; };
@@ -30,6 +31,7 @@
 		7D3A7CB3128A948F0073D086 /* pass2.vert */ = {isa = PBXFileReference; fileEncoding = 8; lastKnownFileType = sourcecode.glsl; path = pass2.vert; sourceTree = "<group>"; };
 		7D4C1E4F128ED502002F62F8 /* room.raw */ = {isa = PBXFileReference; lastKnownFileType = file; path = room.raw; sourceTree = "<group>"; };
 		7D7AF85E1222C8CC003A0434 /* opengl.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = opengl.icns; sourceTree = "<group>"; };
+		7D82B6471D3464E2006980FA /* HappyBudda.obj */ = {isa = PBXFileReference; lastKnownFileType = text; path = HappyBudda.obj; sourceTree = "<group>"; };
 		7DA91BC7128665B4005010F2 /* glsl.cpp */ = {isa = PBXFileReference; fileEncoding = 8; lastKnownFileType = sourcecode.cpp.cpp; path = glsl.cpp; sourceTree = "<group>"; };
 		7DA91BC8128665B4005010F2 /* glsl.h */ = {isa = PBXFileReference; fileEncoding = 8; lastKnownFileType = sourcecode.c.h; path = glsl.h; sourceTree = "<group>"; };
 		7DA91BCA128665BE005010F2 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 8; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
@@ -55,6 +57,7 @@
 		7D1E90D81123E2F7005E6C75 = {
 			isa = PBXGroup;
 			children = (
+				7D82B6471D3464E2006980FA /* HappyBudda.obj */,
 				7DA91BCA128665BE005010F2 /* main.cpp */,
 				7DA91BC7128665B4005010F2 /* glsl.cpp */,
 				7DA91BC8128665B4005010F2 /* glsl.h */,
@@ -142,6 +145,7 @@
 				7D3A7CB7128A949A0073D086 /* pass2.vert in Resources */,
 				7D7AF85F1222C8CC003A0434 /* opengl.icns in Resources */,
 				7DA91C05128666AA005010F2 /* bunny.obj in Resources */,
+				7D82B6481D3464E2006980FA /* HappyBudda.obj in Resources */,
 				7D4C1E50128ED502002F62F8 /* room.raw in Resources */,
 				7DC60356128FF86C00204257 /* campus.raw in Resources */,
 			);
@@ -191,6 +195,7 @@
 				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				OTHER_LDFLAGS = (
 					"-framework",
 					GLUT,
@@ -213,6 +218,7 @@
 				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				OTHER_LDFLAGS = (
 					"-framework",
 					GLUT,

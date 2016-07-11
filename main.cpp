@@ -139,7 +139,7 @@ static int btn = -1;
 */
 #include "Obj.h"
 static Obj *obj;
-static char objfile[] = "bunny.obj";
+static char objfile[] = "HappyBudda.obj";
 
 /*
 ** çﬁéø
@@ -674,7 +674,7 @@ static void function(int key, int x, int y)
 int main(int argc, char *argv[])
 {
   glutInit(&argc, argv);
-  glutInitWindowSize(512, 512);
+  glutInitWindowSize(800, 800);
   glutInitDisplayMode(GLUT_RGBA | GLUT_DEPTH | GLUT_DOUBLE);
   glutCreateWindow("SSAO Sample");
   glutDisplayFunc(display);
