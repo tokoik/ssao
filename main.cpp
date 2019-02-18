@@ -4,18 +4,9 @@
 #include <cstring>
 #include <cmath>
 
-#if defined(WIN32)
-#  pragma warning(disable:4996)
-//#  pragma comment(linker, "/subsystem:\"windows\" /entry:\"mainCRTStartup\"")
-#  pragma comment(lib, "glew32.lib")
-#  include "glew.h"
-#  include "glut.h"
-#elif defined(__APPLE__) || defined(MACOSX)
-#  include <GLUT/glut.h>
-#else
-#  define GL_GLEXT_PROTOTYPES
-#  include <GL/glut.h>
-#endif
+#include <GL/glew.h>
+#include <GL/glut.h>
+
 
 #ifdef _DEBUG
 static void CheckFramebufferStatus(void)
@@ -139,7 +130,7 @@ static int btn = -1;
 */
 #include "Obj.h"
 static Obj *obj;
-static char objfile[] = "HappyBudda.obj";
+static char objfile[] = "bunny.obj";
 
 /*
 ** 材質
@@ -247,7 +238,7 @@ static GLuint loadImage(const char *name, int width, int height)
     file.seekg(0L, std::ios::end);
 
     // 現在のファイルの読み込み位置 (＝サイズ) を取得
-    GLsizei length = file.tellg();
+    GLsizei length = static_cast<GLsizei>(file.tellg());
 
     // ファイルサイズ分のメモリを確保
     GLubyte *image = new GLubyte[length];

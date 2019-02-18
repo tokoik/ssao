@@ -7,7 +7,7 @@
 
 #if defined(WIN32)
 #  pragma warning(disable:4996)
-#  include "glew.h"
+#  include <GL/glew.h>
 #  include <GL/gl.h>
 #elif defined(__APPLE__) || defined(MACOSX)
 #  include <OpenGL/gl.h>
