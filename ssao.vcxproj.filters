@@ -55,5 +55,6 @@
     <None Include="pass2.vert">
       <Filter>シェーダー ファイル</Filter>
     </None>
+    <None Include="packages.config" />
   </ItemGroup>
 </Project>

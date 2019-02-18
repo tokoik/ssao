@@ -5,7 +5,7 @@
 #include <fstream>
 
 #if defined(WIN32)
-#  include "glew.h"
+#  include <GL/glew.h>
 #  include <GL/gl.h>
 #elif defined(__APPLE__) || defined(MACOSX)
 #  include <OpenGL/gl.h>
@@ -32,7 +32,7 @@ int readShaderSource(GLuint shader, const char *name)
 
     // ファイルの末尾に移動し現在位置（つまりファイルサイズ）を得る
     file.seekg(0L, std::ios::end);
-    GLsizei length = file.tellg();
+    GLsizei length = static_cast<GLsizei>(file.tellg());
     
     // ファイルサイズのメモリを確保
     const GLchar *source = new GLchar[length];
