@@ -3,6 +3,7 @@
 #
 core
 *.o
+*.dep
 *~
 a.out
 ssao
